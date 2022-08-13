@@ -283,9 +283,16 @@ footer .footer {
 
   .presentation {
     flex-direction: column-reverse;
+    text-align: center;
   }
+
   .presentation .text-presentation {
     width: 100%;
+  }
+
+  .presentation .text-presentation a{
+    margin: 0 auto;
+    margin-top: 10%;
   }
 
   #quem-somos {
@@ -296,12 +303,16 @@ footer .footer {
     min-width: 320px;
     margin: auto;
   }
+  #quem-somos p {
+    text-align: justify;
+    margin: 0 auto;
+  }
 
   .list-services {
     flex-direction: column;
   }
   .items-services img {
-    width: 50%;
+    width: 25%;
     margin: auto;
   }
 
@@ -316,5 +327,8 @@ footer .footer {
     margin: auto;
     width: 100%;
     margin-bottom: 20px;
+  }
+  footer {
+    text-align: center;
   }
 }
