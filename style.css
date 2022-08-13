@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Exo', 'Open Sans','sans-serif';
 }
 
 :root {
-  --primary-color: #122A57
+  --primary-color: #122A57;
+  --second-color: #afcafa
+  ;
 }
 
 ul {
@@ -50,6 +54,10 @@ header .list-items {
   color: #fff;
 }
 
+.list-items li a:hover{
+  color: var(--second-color);
+}
+
 header .menu {
   justify-content: space-between;
 }
@@ -82,6 +90,10 @@ header .menu {
   line-height: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.text-presentation .btn:hover{
+  background-color: var(--second-color);
+  color: var(--primary-color);
 }
 
 #quem-somos {
@@ -124,6 +136,7 @@ header .menu {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 100px;
+  text-align: center;
 }
 
 #services h2 {
@@ -157,6 +170,11 @@ header .menu {
   font-weight: 700;
 }
 
+.items-services a:hover{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
 .items-services p {
   font-weight: 700;
   font-size: 18px;
@@ -177,6 +195,8 @@ header .menu {
 
 #plans h2 {
   font-size: 32px;
+  text-align: center;
+  color: var(--primary-color);
 }
 
 .list-plans {
@@ -196,6 +216,11 @@ header .menu {
 .item-plan .btn {
   margin: auto;
   margin-bottom: 20px;
+}
+
+.item-plan .btn:hover {
+  background-color: var(--second-color);
+  color: var(--primary-color);
 }
 
 .item-plan h3 {
@@ -238,6 +263,7 @@ header .menu {
 
 footer {
   background-color: var(--primary-color);
+  font-size: smaller;
   height: 70px;
   display: flex;
   align-items: center;
